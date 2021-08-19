@@ -1,0 +1,13 @@
+@import 'montserrat.scss';
+@import './blocks/header.scss';
+@import './blocks/main.scss';
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #2c3e50;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
