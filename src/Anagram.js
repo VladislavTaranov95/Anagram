@@ -1,5 +1,5 @@
 function isAnagram(firstStr, secondStr) {
-    return firstStr.toLowerCase().replace(/\s+/g, '').split('').sort().join('') === secondStr.toLowerCase().replace(/\s+/g, '').split('').sort().join('')
+    return firstStr.toLowerCase().replace(/[^a-zа-яё]/gi,"").split('').sort().join('') === secondStr.toLowerCase().replace(/[^a-zа-яё]/gi,"").split('').sort().join('')
 }
 
 module.exports = isAnagram;
