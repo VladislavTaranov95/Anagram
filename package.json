@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage --colors",
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
     "start": "webpack-dev-server --mode development --open"
@@ -17,6 +19,7 @@
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.2",
     "jest": "^27.0.6",
+    "jest-transform-stub": "^2.0.0",
     "mini-css-extract-plugin": "^2.2.0",
     "node-sass": "^6.0.1",
     "sass-loader": "^12.1.0",

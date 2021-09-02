@@ -20,8 +20,15 @@ btn.addEventListener('click', () => {
         firstInput.value = ''
         secondInput.value = ''
     }
+    else if(!isNaN(Number(firstValue)) || !isNaN(Number(secondValue)))
+    {
+        errorText.textContent = 'Ошибка: некорректно введно значение'
+        resultText.textContent = ''
+        firstInput.value = ''
+        secondInput.value = ''
+    }
     else {
-        let result = isAnagram(firstValue, secondValue)
+        let result = isAnagram(firstValue.toLowerCase(), secondValue.toLowerCase())
 
         errorText.hidden = true
         firstInput.value = ''
