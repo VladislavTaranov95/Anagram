@@ -28,7 +28,7 @@ btn.addEventListener('click', () => {
         secondInput.value = ''
     }
     else {
-        let result = isAnagram(firstValue.toLowerCase(), secondValue.toLowerCase())
+        let result = isAnagram(firstValue, secondValue)
 
         errorText.hidden = true
         firstInput.value = ''
